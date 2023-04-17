@@ -6,7 +6,7 @@ void main() async {
   // init the Hive
   await Hive.initFlutter();
 
-  // open the box
+  // open a box
   var box = await Hive.openBox('mybox');
 
   runApp(const MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: HomePage(),
       theme: ThemeData(primarySwatch: Colors.amber),
     );
   }
